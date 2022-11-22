@@ -9,7 +9,7 @@ import streamlit as st
 from datetime import datetime
 import streamlit.components.v1 as components
 
-st.title("HCI Test Study - Figma Prototype")
+st.title("HCI Test Study - Your Energy Challenge")
 st.write("""Participants can take part in our study directly here on this webpage. 
 This page include all the information plus guidance that the participant needs to walk through the experiment on their own.""")
 
