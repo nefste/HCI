@@ -47,6 +47,8 @@ if demo is True or st.session_state['demo']:
     st.subheader("Figma Prototype Testing")
     st.markdown("**Please read follwing instructions very carefully and click on the button below when you are ready to perform the task in your figma prototype.**")
     st.markdown("""
+            ** Please be aware:: you cannot do anything wrong here. This experiment is to test our tool and not you.**
+            
              **Precondition:** Before you start make sure you are on the Home Screen, for that do a "Restart" on Figma iFrame (bottom right) or press key "R". When you press the Start Button the time will be recorded automatically. No worries, you do not have a given time to complete the task.
             
              **Step 1:** The user will start at the Home Screen where he has an quick overview of his devices and settings. Then he needs to click on the menu item Setting to jump to the Setting Screen.
