@@ -20,11 +20,11 @@ st.write("PREPARATION")
 
 demoform = st.form("Demographic Questionaire:")
 demoform.subheader("Demographic Questionaire:")
-name = demoform.text_input("first name:")
-surname = demoform.text_input("last name:")
+name = demoform.text_input("first name:", placeholder = 'Geralt')
+surname = demoform.text_input("last name:", placeholder = 'of Rivia')
 age = demoform.slider("age:",0,100)
 skills = demoform.select_slider("how often do you use smartphone apps?:",["never","weekly","daily","~5 times/day","> 10 times/day"])
-location = demoform.text_input("Where are you currently at:", placeholder="in class, at home")
+location = demoform.text_input("Where are you currently at:", placeholder="in class, at home, at alpamare")
 
 
 if 'demo' not in st.session_state:
