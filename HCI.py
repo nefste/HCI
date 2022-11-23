@@ -42,7 +42,7 @@ if 'sus' not in st.session_state:
 demo = demoform.form_submit_button("📬 Submit")
 if demo is True or st.session_state['demo']:
     st.session_state['demo'] = True 
-    st.success(f"Thank you {surname} {name} for your information, we saved them successfully. You can now proceed.")
+    st.success(f"Thank you {name} {surname}  for your information, we saved them successfully. You can proceed now.")
     
     st.subheader("🎮 Figma Prototype Testing")
     st.markdown("**Please read follwing instructions very carefully and click on the button below when you are ready to perform the task in your figma prototype.**")
@@ -73,7 +73,7 @@ if demo is True or st.session_state['demo']:
         if 'dt_start' not in st.session_state:
             st.session_state['dt_start'] = dt_start
         components.iframe(src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsMM0nRH0fXmQVG3uWSlfen%2FPrototype%3Fnode-id%3D61%253A965%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A288", width=800, height=600)
-        end = st.button("🏁 finished the task according given instructions")
+        end = st.button("🏁 Finished the task according given instructions")
     
     
     
@@ -104,7 +104,7 @@ if demo is True or st.session_state['demo']:
                 st.session_state['sus'] = True
                 result_sus = (((one + three + five + seven + nine)-5) + (25-(two+four+six+eight+ten)))*2.5
                 st.success(f"Your SUS Score is {result_sus}")
-                st.info("Based on research, a SUS score above a 68 would be considered above average and anything below 68 is below average, however the best way to interpret your results involves “normalizing” the scores to produce a percentile ranking.")
+                st.info("ℹ️ Based on research, a SUS score above a 68 would be considered above average and anything below 68 is below average, however the best way to interpret your results involves “normalizing” the scores to produce a percentile ranking.")
                 
                 
                 with open(f"{name}_{surname}_results.txt", "a") as results:
