@@ -9,7 +9,7 @@ import streamlit as st
 from datetime import datetime
 import streamlit.components.v1 as components
 
-st.title("HCI Test Study - Your Energy Challenge")
+st.title("⚡ HCI Test Study - Your Energy Challenge ⚡")
 st.write("""Participants can take part in our study directly here on this webpage. 
 This page include all the information plus guidance that the participant needs to walk through the experiment on their own.""")
 
@@ -18,7 +18,7 @@ dt = datetime.now()
 st.write("PREPARATION")
 
 
-demoform = st.form("Demographic Questionaire:")
+demoform = st.form("🏄‍♀️ Demographic Questionaire:")
 demoform.subheader("Demographic Questionaire:")
 name = demoform.text_input("first name:", placeholder = 'Geralt')
 surname = demoform.text_input("last name:", placeholder = 'of Rivia')
@@ -39,12 +39,12 @@ if 'sus' not in st.session_state:
 
 
 # Now add a submit button to the form:
-demo = demoform.form_submit_button("Submit")
+demo = demoform.form_submit_button("📬 Submit")
 if demo is True or st.session_state['demo']:
     st.session_state['demo'] = True 
     st.success(f"Thank you {surname} {name} for your information, we saved them successfully. You can now proceed.")
     
-    st.subheader("Figma Prototype Testing")
+    st.subheader("🎮 Figma Prototype Testing")
     st.markdown("**Please read follwing instructions very carefully and click on the button below when you are ready to perform the task in your figma prototype.**")
     st.markdown("""
             ** Please be aware:: you cannot do anything wrong here. This experiment is to test our tool and not you.**
@@ -73,7 +73,7 @@ if demo is True or st.session_state['demo']:
         if 'dt_start' not in st.session_state:
             st.session_state['dt_start'] = dt_start
         components.iframe(src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsMM0nRH0fXmQVG3uWSlfen%2FPrototype%3Fnode-id%3D61%253A965%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A288", width=800, height=600)
-        end = st.button("[FINISHED TASK] I finished the task according given instructions")
+        end = st.button("🏁 finished the task according given instructions")
     
     
     
@@ -85,7 +85,7 @@ if demo is True or st.session_state['demo']:
             st.success(f"Thank you {surname} {name}, please continue with survey...")
             
             susform = st.form("SUS Survey:")
-            susform.subheader("SUS Survey:")
+            susform.subheader("📋 SUS Survey:")
             one = susform.slider("I think that I would like to use this system frequently.",1,5)
             two = susform.slider("I found the system unnecessarily complex.",1,5)
             three = susform.slider("I thought the system was easy to use.",1,5)
@@ -97,7 +97,7 @@ if demo is True or st.session_state['demo']:
             nine = susform.slider("I felt very confident using the system.",1,5)
             ten = susform.slider("I needed to learn a lot of things before I could get going with this system.",1,5)
             # Now add a submit button to the form:
-            sus = susform.form_submit_button("Submit SUS Survey")
+            sus = susform.form_submit_button("📬 Submit SUS Survey")
 
             
             if sus is True or st.session_state['sus']:
@@ -120,9 +120,9 @@ if demo is True or st.session_state['demo']:
                 
                 with open(f"{name}_{surname}_results.txt", "rb") as file:
                     btn = st.download_button(
-                        label="Download Data & Results",
+                        label="💾 Download Data & Results",
                         data=file,
-                        file_name=f'data_{name}_{surname}.txt',
+                        file_name=f'results_{name}_{surname}.txt',
                         mime='text/txt')
 
 
