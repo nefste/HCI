@@ -47,7 +47,7 @@ demo = demoform.form_submit_button("Submit")
 if demo is True or st.session_state['demo']:
     st.balloons()
     st.session_state['demo'] = True 
-    st.success(f"Thank you {surname} {name} for your information, we saved them successfully. You can now proceed.")
+    st.success(f"✔️ Thank you {surname} {name} for your information, we saved them successfully. You can now proceed.")
     
     st.subheader("Figma Prototype Testing")
     st.markdown("**Please read follwing instructions very carefully and click on the button below when you are ready to perform the task in your figma prototype.**")
@@ -75,7 +75,7 @@ if demo is True or st.session_state['demo']:
              **Last Remark:** Please help us with our experiment with thinking out loud. We know this might feel akward in the beginning, but would be massive help for us. Thank you!
 
              """)
-    start = st.button("[START] I understood the task, lets start")
+    start = st.button("I understood the task, lets START 🎬")
 
     if start is True or st.session_state['start']:
         st.session_state['start'] = True
@@ -83,7 +83,7 @@ if demo is True or st.session_state['demo']:
         if 'dt_start' not in st.session_state:
             st.session_state['dt_start'] = dt_start
         components.iframe(src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsMM0nRH0fXmQVG3uWSlfen%2FPrototype%3Fnode-id%3D61%253A965%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A288", width=800, height=600)
-        end = st.button("[FINISHED TASK] I finished the task according given instructions")
+        end = st.button("FINISHED the task according given instructions 🏁")
     
     
     
@@ -92,7 +92,7 @@ if demo is True or st.session_state['demo']:
             dt_end = datetime.now()
             if 'dt_end' not in st.session_state:
                 st.session_state['dt_end'] = dt_end
-            st.success(f"Thank you {surname} {name}, please continue with survey...")
+            st.success(f"✔️ Thank you {surname} {name}, please continue with survey...")
             
             susform = st.form("SUS Survey:")
             susform.subheader("SUS Survey:")
@@ -114,7 +114,7 @@ if demo is True or st.session_state['demo']:
                 st.balloons()
                 st.session_state['sus'] = True
                 result_sus = (((one + three + five + seven + nine)-5) + (25-(two+four+six+eight+ten)))*2.5
-                st.success(f"Your SUS Score is {result_sus}")
+                st.success(f"✔️ Submitted, your SUS Score is {result_sus}")
                 st.info("Based on research, a SUS score above a 68 would be considered above average and anything below 68 is below average, however the best way to interpret your results involves “normalizing” the scores to produce a percentile ranking.")
                 
                 st.write("")
