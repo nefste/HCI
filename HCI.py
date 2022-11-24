@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Nov 22 19:18:50 2022
+Created on Tue Nov 22 19:18:51 2022
 
 @author: steph
 """
@@ -50,21 +50,28 @@ if demo is True or st.session_state['demo']:
     st.subheader("Figma Prototype Testing")
     st.markdown("**Please read follwing instructions very carefully and click on the button below when you are ready to perform the task in your figma prototype.**")
     st.markdown("""
-             **Precondition:** Before you start make sure you are on the Home Screen, for that do a "Restart" on Figma iFrame (bottom right) or press key "R". When you press the Start Button the time will be recorded automatically. No worries, you do not have a given time to complete the task.
+             **Technical Precondition:** Before you start make sure you are on the Home Screen, for that do a "Restart" on Figma iFrame (bottom right) or press key "R". When you press the Start Button the time will be recorded automatically. No worries, you do not have a given time to complete the task.
             
-             **Step 1:** The user will start at the Home Screen where he has an quick overview of his devices and settings. Then he needs to click on the menu item Setting to jump to the Setting Screen.
+             **Be aware:** Please make sure that you are recording yourself (audio and screen). If necessary, we suggest to make a quick test.
 
-             **Step 2:** The user should test the carousel effect by scrolling trough the devices and get an overview of all setup/installed/connected devices. Once he did that he clicks on the Challenges menu item on the bottom of the screen to jump to the Challenges Screen.
+             **Your Scenario:** You are a user of our energy saving challenge app. Our app is used to measure your every day electricity consumption. A new feature of our app are so-called "energy challenges".
 
-             **Step 3:** The user sees that no challenge is setup, therefore he clicks now on the Add-Icon (Plus Icon) to add a new challenge. The user will be forwarded to the Enemy Screen.
+             **Your Task:** Your Task is to create a new challenge in the app. In this specific case you want to make an energy challenge against "Geralt of Rivia" in terms of light consumption.
 
-             **Step 4:** The user needs to choose an enemy, in our scenario he need to specifically select “Geralt of Rivia”. The selection is in a scrollable list. If the user selects another enemy he will be forwarded to the Enemy-Fallback Screen where he will be informed that he need to choose “Geralt of Rivia” for this test scenario. When user selected given enemy he will be forwarded to the Device Screen.
+             **Your Task summarized:** Make a challenge against Geralt of Rivia in terms of "Lights". The task is finished, when you see your challenge added to the board. You will see a screen telling you, that you are done.
 
-             **Step 5:** The user needs to choose a device, in our scenario he needs to specifically select “Lights”. The selection is here again in a scrollable list. If the user selects another device he will be forwarded to the Device-Fallback Screen where he will be informed that he need to choose “Lights” for this test scenario. When user selected given device he will be forwarded to the Start Screen.
-                
-             **Step 6**: The user needs to start/add the challenge by clicking the button Start on the Start Screen.
-                
-             **Step 7:** The user sees a success message, on this Success Screen he needs to click on the button “See all my Challenges”, he will be forwarded to the Challenges (new) screen with the newly added challenge. Here the user will be informed as well that he finished his task/scenario. **Since you completed the task, press on the button "Finished Task" bellow and continue according given instructions.**
+             **Remark I: ** Pleae know that your participation is completely voluntary and that you can end the experiment at any time.
+
+             **Remark II: ** You are testing the system and not you, so you can’t do anything wrong. PLease also be aware, that you are provided a prototype.
+
+             **Remark II: ** This website will guide you through the experiment.
+
+             **Remark III: ** If the Figma in the next step is not working, please try to use another browser.
+
+             **Remark IV: ** With clicking the "Understood"-Button, please make sure you are recording. Let the experiment begin!
+
+             **Last Remark: ** Please help us with our experiment with thinking out loud. We know this might feel akward in the beginning, but would be massive help for us. Thank you!
+
              """)
     start = st.button("[START] I understood the task, lets start")
 
@@ -325,7 +332,9 @@ if demo is True or st.session_state['demo']:
                     st.session_state['ueq'] = True
                     st.success(f"Thanks {name}. Your UEQ Results will be calculated by us.")
                     st.write("---")
-                    st.info("Please don't forget to download and send your results.")
+                    st.info("Please don't forget to download and send us your results. An address should be given to you.")
+                    st.write("---")
+                    st.info("Thank you very much for your participation. Here is a small gift for you: https://www.youtube.com/watch?v=p2MPA_dLTvg")
                     
                 
                 
