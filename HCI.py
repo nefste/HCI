@@ -12,7 +12,7 @@ import streamlit.components.v1 as components
 st.title("⚡ HCI Test Study - Your Energy Challenge ⚡")
 st.write("Thank you that you have decided to join our prototype-testing inlc. survey, we are glad to have you here. Before you can actually test our application according \
          a given task, we need to get you known a bit better. Therefore we kindly ask you to fill out a demographic survey.")
-st.info("""ℹ️ Participants can take part in our study directly here on this webpage. 
+st.info("""🛈 Participants can take part in our study directly here on this webpage. 
 This page include all the information plus guidance that the participant needs to walk through the experiment on their own.""")
 
 dt = datetime.now()
@@ -115,7 +115,7 @@ if demo is True or st.session_state['demo']:
                 st.session_state['sus'] = True
                 result_sus = (((one + three + five + seven + nine)-5) + (25-(two+four+six+eight+ten)))*2.5
                 st.success(f"✔️ Submitted, your SUS Score is {result_sus}")
-                st.info("Based on research, a SUS score above a 68 would be considered above average and anything below 68 is below average, however the best way to interpret your results involves “normalizing” the scores to produce a percentile ranking.")
+                st.info("🛈 Based on research, a SUS score above a 68 would be considered above average and anything below 68 is below average, however the best way to interpret your results involves “normalizing” the scores to produce a percentile ranking.")
                 
                 st.write("")
                 ueqform = st.form("UEQ Survey:")
