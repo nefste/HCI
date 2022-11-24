@@ -334,8 +334,7 @@ if demo is True or st.session_state['demo']:
                     st.write("---")
                     st.info("Please don't forget to download and send us your results. An address should be given to you.")
                     st.write("---")
-                    st.info("Thank you very much for your participation. Here is a small gift for you...")
-                    st.video("https://www.youtube.com/watch?v=p2MPA_dLTvg")
+                    
                 
                 
                 
@@ -359,6 +358,8 @@ if demo is True or st.session_state['demo']:
                             file_name=f'data_{name}_{surname}.txt',
                             mime='text/txt')
     
+                    st.info("Thank you very much for your participation. Here is a small gift for you...")
+                    st.video("https://www.youtube.com/watch?v=p2MPA_dLTvg")
     
 
 
