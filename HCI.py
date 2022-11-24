@@ -9,10 +9,10 @@ import streamlit as st
 from datetime import datetime
 import streamlit.components.v1 as components
 
-st.title("⚡ HCI Test Study - Figma Prototype ⚡")
+st.title("⚡ HCI Test Study - Your Energy Challenge ⚡")
 st.write("Thank you that you have decided to join our prototype-testing inlc. survey, we are glad to have you here. Before you can actually test our application according \
          a given task, we need to get you known a bit better. Therefore we kindly ask you to fill out a demographic survey.")
-st.info("""Participants can take part in our study directly here on this webpage. 
+st.info("""ℹ️ Participants can take part in our study directly here on this webpage. 
 This page include all the information plus guidance that the participant needs to walk through the experiment on their own.""")
 
 dt = datetime.now()
