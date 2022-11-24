@@ -340,7 +340,7 @@ if demo is True or st.session_state['demo']:
                         results.write(f"\n{60*'-'}\nSUS-Survey from {surname} {name}:\n{one};{two};{three};{four};{five};{six};{seven};{eight};{nine};{ten}\n{60*'-'}\nResult Score: {result_sus}\n{60*'-'}\n")
                     
                     with open(f"{name}_{surname}_results.txt", "a") as results:
-                        results.write(f"{q1};{q2};{q3};{q4};{q5};{q6};{q7};{q8};{q9};{q10};{q12};{q13};{q14};{q15};{q16};{q17};{q18};{q19};{q20};{q21};{q22};{q23};{q24};{q25};{q26}")
+                        results.write(f"\n{60*'-'}\nUEQ-Survey from {surname} {name}:\n{q1};{q2};{q3};{q4};{q5};{q6};{q7};{q8};{q9};{q10};{q12};{q13};{q14};{q15};{q16};{q17};{q18};{q19};{q20};{q21};{q22};{q23};{q24};{q25};{q26}")
                     
                     
                     with open(f"{name}_{surname}_results.txt", "rb") as file:
