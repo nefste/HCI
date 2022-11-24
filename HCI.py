@@ -60,17 +60,17 @@ if demo is True or st.session_state['demo']:
 
              **Your Task summarized:** Make a challenge against Geralt of Rivia in terms of "Lights". The task is finished, when you see your challenge added to the board. You will see a screen telling you, that you are done.
 
-             **Remark I: ** Pleae know that your participation is completely voluntary and that you can end the experiment at any time.
+             **Remark I:** Pleae know that your participation is completely voluntary and that you can end the experiment at any time.
 
-             **Remark II: ** You are testing the system and not you, so you can’t do anything wrong. PLease also be aware, that you are provided a prototype.
+             **Remark II:** You are testing the system and not you, so you can’t do anything wrong. PLease also be aware, that you are provided a prototype.
 
-             **Remark II: ** This website will guide you through the experiment.
+             **Remark II:** This website will guide you through the experiment.
 
-             **Remark III: ** If the Figma in the next step is not working, please try to use another browser.
+             **Remark III:** If the Figma in the next step is not working, please try to use another browser.
 
-             **Remark IV: ** With clicking the "Understood"-Button, please make sure you are recording. Let the experiment begin!
+             **Remark IV:** With clicking the "Understood"-Button, please make sure you are recording. Let the experiment begin!
 
-             **Last Remark: ** Please help us with our experiment with thinking out loud. We know this might feel akward in the beginning, but would be massive help for us. Thank you!
+             **Last Remark:** Please help us with our experiment with thinking out loud. We know this might feel akward in the beginning, but would be massive help for us. Thank you!
 
              """)
     start = st.button("[START] I understood the task, lets start")
@@ -334,8 +334,8 @@ if demo is True or st.session_state['demo']:
                     st.write("---")
                     st.info("Please don't forget to download and send us your results. An address should be given to you.")
                     st.write("---")
-                    st.info("Thank you very much for your participation. Here is a small gift for you: https://www.youtube.com/watch?v=p2MPA_dLTvg")
-                    
+                    st.info("Thank you very much for your participation. Here is a small gift for you...")
+                    st.video("https://www.youtube.com/watch?v=p2MPA_dLTvg")
                 
                 
                 
