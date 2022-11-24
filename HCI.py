@@ -359,7 +359,8 @@ if demo is True or st.session_state['demo']:
                             data=file,
                             file_name=f'data_{name}_{surname}.txt',
                             mime='text/txt')
-    
+                    
+                    st.write("---")
                     st.success("Thank you very much for your participation. Here is a small gift for you...")
                     st.video("https://www.youtube.com/watch?v=p2MPA_dLTvg")
     
