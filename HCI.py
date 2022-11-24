@@ -10,6 +10,7 @@ from datetime import datetime
 import streamlit.components.v1 as components
 
 st.title("⚡ HCI Test Study - Your Energy Challenge ⚡")
+st.subheader("Welcome")
 st.write("Thank you that you have decided to join our prototype-testing inlc. survey, we are glad to have you here. Before you can actually test our application according \
          a given task, we need to get you known a bit better. Therefore we kindly ask you to fill out a demographic survey.")
 st.write("Please take your time with this task to provide us reliable information about your experience. At the end you get a small surprise for your effort, stay tuned.🎉")
