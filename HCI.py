@@ -10,12 +10,13 @@ from datetime import datetime
 import streamlit.components.v1 as components
 
 st.title("HCI Test Study - Figma Prototype")
-st.write("""Participants can take part in our study directly here on this webpage. 
+st.write("Thank you that you have decided to join our prototype-testing inlc. survey, we are glad to have you here. Before you can actually test our application according \
+         a given task, we need to get you known a bit better. Therefore we kindly ask you to fill out a demographic survey.")
+st.info("""Participants can take part in our study directly here on this webpage. 
 This page include all the information plus guidance that the participant needs to walk through the experiment on their own.""")
 
 dt = datetime.now()
 
-st.write("PREPARATION")
 
 
 demoform = st.form("Demographic Questionaire:")
@@ -25,6 +26,7 @@ name = demoform.text_input("last name:")
 age = demoform.slider("age:",0,100)
 skills = demoform.select_slider("how often do you use smartphone apps?:",["never","weekly","daily","~5 times/day","> 10 times/day"])
 location = demoform.text_input("Where are you currently at:", placeholder="in class, at home")
+extrainfo = demoform.text_input("Anything else you want to tell us:", placeholder="what's on your mind?")
 
 
 if 'demo' not in st.session_state:
@@ -339,7 +341,7 @@ if demo is True or st.session_state['demo']:
                 
                 
                     with open(f"{name}_{surname}_results.txt", "a") as results:
-                        results.write(f"\n{60*'-'}\n{dt} - NEW ENTRY:\n{name}\n{surname}\n{age}\n{skills}\n{location}\n{60*'-'}\n")
+                        results.write(f"\n{60*'-'}\n{dt} - NEW ENTRY:\n{name}\n{surname}\n{age}\n{skills}\n{location}\n{extrainfo}\n{60*'-'}\n")
                     
                     with open(f"{name}_{surname}_results.txt", "a") as results:
                         results.write(f"\n{60*'-'}\nTask Completed from {name} {surname}: {(st.session_state['dt_end'] - st.session_state['dt_start']).total_seconds()} seconds\n{60*'-'}\n")
