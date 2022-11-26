@@ -29,7 +29,7 @@ surname = demoform.text_input("surname:")
 name = demoform.text_input("last name:")
 age = demoform.slider("age:",0,100)
 skills = demoform.select_slider("how often do you use smartphone apps?:",["never","weekly","daily","~5 times/day","> 10 times/day"])
-location = demoform.text_input("Where are you currently at:", placeholder="in class, at home")
+location = demoform.text_input("Where are you currently at:", placeholder="in class, at home, at alpamare")
 extrainfo = demoform.text_input("Anything else you want to tell us:", placeholder="what's on your mind?")
 
 
