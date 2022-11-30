@@ -2,7 +2,7 @@
 """
 Created on Tue Nov 22 19:18:51 2022
 
-@author: steph
+@author: steph, ludo
 """
 
 import streamlit as st
@@ -66,7 +66,7 @@ if demo is True or st.session_state['demo']:
 
              **Your Task summarized:** Make a challenge against Geralt of Rivia in terms of "Lights". The task is finished, when you see your challenge added to the board. You will see a screen telling you, that you are done.
 
-             **Remark I:** Pleae know that your participation is completely voluntary and that you can end the experiment at any time.
+             **Remark I:** Please know that your participation is completely voluntary and that you can end the experiment at any time.
 
              **Remark II:** You are testing the system and not you, so you can’t do anything wrong. PLease also be aware, that you are provided a prototype.
 
@@ -74,7 +74,9 @@ if demo is True or st.session_state['demo']:
 
              **Remark III:** If the Figma in the next step is not working, please try to use another browser.
 
-             **Remark IV:** With clicking the "Understood"-Button, please make sure you are recording. Let the experiment begin!
+             **Remark IV:** With clicking the "Understood"-Button, please make sure you are recording. Let the experiment begin.
+
+             **Time recording: ** You will receive a figma image in the middle of the task flow. In order to measure the time you take for the experiment, we need you to press the letter "r" to begin the task.
 
              **Last Remark:** Please help us with our experiment with thinking out loud. We know this might feel akward in the beginning, but would be massive help for us. Thank you!
 
